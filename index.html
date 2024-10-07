@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Password Generator</title>	
+	<link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Password Generator</h1>
+		<div class="display-container">
+			<input readonly placeholder="Password" class="display">
+			<button copy-btn>
+				<span class="tool" data-copyMsg></span>
+				<img class="cpyimg" src="./Images/copy.png" alt="copy" height="25" width="25">
+			</button>
+		</div>
+
+<div class="input-container">
+			 <div class="length-container">
+				<p>Password Length</p>
+				<p data-lengthNumber>0</p>
+			 </div>
+			 <div><input type ="range" min="1" max="20" step="1" class="slider" dataLengthSlider></div>
+		
+		
+		<div class="check">
+			<input type ="checkbox" id="uppercase">
+			<label for="uppercase">Includes uppercase letters</label>
+		</div>
+		<div class="check">
+			<input type ="checkbox" id="lowercase">
+			<label for="lowercase">Includes lowercase letters</label>
+		</div>
+		<div class="check">
+			<input type ="checkbox" id="number">
+			<label for="number">Includes number letters</label>
+		</div>
+		<div class="check">
+			<input type ="checkbox" id="symbol">
+			<label for="symbol">Includes symbol letters</label>
+		</div>
+
+		<div class="strength-container">
+			<P> Strength </P>
+			<div class="indi" data-indicator>  </div>
+		</div>
+
+		<button class="generate">Generate Password</button>
+	</div>
+</div>
+	<script src="script.js"></script>
+ 	<link rel="stylesheet" href="style.css">
+</body>
+</html>

@@ -1,3 +1,3 @@
 # Password-Generator
 
-**Link** -> passwordgenerator24.netlify.app
+**Link** -> https://passwordgenerator24.netlify.app/
